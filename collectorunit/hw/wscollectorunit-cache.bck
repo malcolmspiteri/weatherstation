@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADAFRUIT-LCD16x2-RGB
+D ADAFRUIT-LCD16x2-RGB
+K RGB backlight negative LCD 16x2 + extras - RGB on black
+F https://www.adafruit.com/products/399
+$ENDCMP
+#
+#End Doc Library
