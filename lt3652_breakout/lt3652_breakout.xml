@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/malcolm/proj/weatherstation/lt3652_breakout/lt3652_breakout.sch</source>
-    <date>Mon 15 Feb 2016 19:01:21 UTC</date>
+    <source>C:\My Data\Projects\weatherstation\lt3652_breakout\lt3652_breakout.sch</source>
+    <date>16/02/2016 01:34:53</date>
     <tool>Eeschema 4.0.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -21,30 +21,141 @@
   <components>
     <comp ref="U1">
       <value>LT3652</value>
-      <libsource lib="w_analog" part="LT3652"/>
+      <footprint>lt3652:LT3652MSE</footprint>
+      <libsource lib="lt3652_breakout-cache" part="LT3652"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56C21ABA</tstamp>
     </comp>
-    <comp ref="P1">
-      <value>CONN_01X06</value>
-      <libsource lib="conn" part="CONN_01X06"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>56C21C2C</tstamp>
-    </comp>
     <comp ref="P2">
       <value>CONN_01X06</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06</footprint>
       <libsource lib="conn" part="CONN_01X06"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56C21C8F</tstamp>
     </comp>
     <comp ref="P3">
       <value>GND</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x01</footprint>
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56C22D2B</tstamp>
     </comp>
+    <comp ref="D1">
+      <value>3mm GRN</value>
+      <footprint>LEDs:LED-3MM</footprint>
+      <libsource lib="device" part="Led_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C26334</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>3mm RED</value>
+      <footprint>LEDs:LED-3MM</footprint>
+      <libsource lib="device" part="Led_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C2636F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>220</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C263E6</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>220</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C26441</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>JUMPER3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="device" part="JUMPER3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C26FC5</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C28292</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>JUMPER3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="device" part="JUMPER3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C28546</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>JUMPER3</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03</footprint>
+      <libsource lib="device" part="JUMPER3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C28A94</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitors_ThroughHole:C_Disc_D6_P5</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C2978D</tstamp>
+    </comp>
+    <comp ref="CON1">
+      <value>BARREL_JACK</value>
+      <footprint>Connect:JACK_ALIM</footprint>
+      <libsource lib="conn" part="BARREL_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C2A4EA</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.68uF</value>
+      <footprint>Capacitors_ThroughHole:C_Disc_D3_P2.5</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C2AA0E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitors_ThroughHole:C_Disc_D6_P5</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56C2D406</tstamp>
+    </comp>
   </components>
   <libparts>
+    <libpart lib="conn" part="BARREL_JACK">
+      <description>DC Barrel Jack</description>
+      <fields>
+        <field name="Reference">CON</field>
+        <field name="Value">BARREL_JACK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="conn" part="CONN_01X01">
       <description>Connector 01x01</description>
       <footprints>
@@ -59,6 +170,24 @@
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector 01x03</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X06">
@@ -82,9 +211,36 @@
         <pin num="6" name="P6" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="w_analog" part="LT3652">
-      <description>Power tracking 2A battery charger for Solar Power</description>
-      <docs>/home/walter/Documenti/Elettronica/DATA_SHEET/Elettronici/Integrati/Analogici/Switcher/LT_LT3652.pdf</docs>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="JUMPER3">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">JUMPER3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="lt3652_breakout-cache" part="LT3652">
       <footprints>
         <fp>msop-12</fp>
         <fp>dfn12</fp>
@@ -109,67 +265,133 @@
         <pin num="13" name="GND" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="device" part="Led_Small">
+      <description>Led</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Led_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R_Small">
+      <description>Resistor</description>
+      <footprints>
+        <fp>Resistor_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
     </library>
-    <library logical="w_analog">
-      <uri>/home/malcolm/proj/kicad_res/eeschema/w_analog.lib</uri>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="lt3652_breakout-cache">
+      <uri>C:\My Data\Projects\weatherstation\lt3652_breakout\lt3652_breakout-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/VIN">
+    <net code="1" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(D1-Pad1)">
+      <node ref="U1" pin="4"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(D2-Pad1)">
+      <node ref="U1" pin="5"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="5" name="VREG">
+      <node ref="JP1" pin="2"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="CON1" pin="2"/>
+      <node ref="P3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="13"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(CON1-Pad3)">
+      <node ref="CON1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(C1-Pad1)">
+      <node ref="JP2" pin="3"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="9" name="TIMER">
+      <node ref="JP2" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="10" name="Net-(JP1-Pad1)">
+      <node ref="P1" pin="3"/>
+      <node ref="JP1" pin="1"/>
+    </net>
+    <net code="11" name="SHDN">
+      <node ref="JP3" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="12" name="VIN">
+      <node ref="JP3" pin="3"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="CON1" pin="1"/>
       <node ref="U1" pin="1"/>
-      <node ref="P1" pin="6"/>
+      <node ref="JP1" pin="3"/>
     </net>
-    <net code="2" name="/NTC">
-      <node ref="U1" pin="8"/>
-      <node ref="P2" pin="5"/>
+    <net code="13" name="Net-(JP3-Pad1)">
+      <node ref="P1" pin="2"/>
+      <node ref="JP3" pin="1"/>
     </net>
-    <net code="3" name="/SENSE">
-      <node ref="P2" pin="3"/>
-      <node ref="U1" pin="10"/>
+    <net code="14" name="Net-(JP2-Pad1)">
+      <node ref="P1" pin="1"/>
+      <node ref="JP2" pin="1"/>
     </net>
-    <net code="4" name="/BOOST">
-      <node ref="U1" pin="11"/>
-      <node ref="P2" pin="2"/>
-    </net>
-    <net code="5" name="/SW">
-      <node ref="P2" pin="1"/>
+    <net code="15" name="/SW">
       <node ref="U1" pin="12"/>
+      <node ref="P2" pin="1"/>
     </net>
-    <net code="6" name="/BAT">
+    <net code="16" name="/BAT">
       <node ref="U1" pin="9"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="8"/>
       <node ref="P2" pin="4"/>
-    </net>
-    <net code="7" name="/VFB">
+      <node ref="P2" pin="5"/>
       <node ref="U1" pin="7"/>
       <node ref="P2" pin="6"/>
     </net>
-    <net code="8" name="Net-(P3-Pad1)">
-      <node ref="P3" pin="1"/>
-      <node ref="U1" pin="13"/>
+    <net code="17" name="/BOOST">
+      <node ref="U1" pin="11"/>
+      <node ref="P2" pin="2"/>
     </net>
-    <net code="9" name="/VIN_REG">
-      <node ref="U1" pin="2"/>
-      <node ref="P1" pin="5"/>
-    </net>
-    <net code="10" name="/SHDN">
-      <node ref="P1" pin="4"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="11" name="/CHRG">
-      <node ref="U1" pin="4"/>
-      <node ref="P1" pin="3"/>
-    </net>
-    <net code="12" name="/FAULT">
-      <node ref="U1" pin="5"/>
-      <node ref="P1" pin="2"/>
-    </net>
-    <net code="13" name="/TIMER">
-      <node ref="P1" pin="1"/>
-      <node ref="U1" pin="6"/>
+    <net code="18" name="/SENSE">
+      <node ref="U1" pin="10"/>
+      <node ref="P2" pin="3"/>
     </net>
   </nets>
 </export>
