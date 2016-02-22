@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name lt3652)(type KiCad)(uri "$(KIPRJMOD)/lt3652.pretty")(options "")(descr ""))
+  (lib (name bourns_trim_pots)(type KiCad)(uri "$(KIPRJMOD)\\bourns_trim_pots.pretty")(options "")(descr ""))
+  (lib (name pcb_test_points)(type KiCad)(uri "$(KIPRJMOD)\\pcb_test_points.pretty")(options "")(descr ""))
 )
