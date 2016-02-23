@@ -2,4 +2,5 @@
   (lib (name lt3652)(type KiCad)(uri "$(KIPRJMOD)/lt3652.pretty")(options "")(descr ""))
   (lib (name bourns_trim_pots)(type KiCad)(uri "$(KIPRJMOD)\\bourns_trim_pots.pretty")(options "")(descr ""))
   (lib (name pcb_test_points)(type KiCad)(uri "$(KIPRJMOD)\\pcb_test_points.pretty")(options "")(descr ""))
+  (lib (name w_conn_jst-ph)(type Legacy)(uri "C:\\My Data\\Projects\\kicad_libs\\pcbnew\\mod_conn_jst-ph\\w_conn_jst-ph.mod")(options "")(descr ""))
 )

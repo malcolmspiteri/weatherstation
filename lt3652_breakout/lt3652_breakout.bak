@@ -273,7 +273,7 @@ Wire Wire Line
 	5175 4100 5500 4100
 Connection ~ 5500 4100
 Wire Wire Line
-	6100 3975 6100 3550
+	6100 3500 6100 3975
 Connection ~ 6100 3550
 Wire Wire Line
 	6100 4175 5800 4175
@@ -506,4 +506,18 @@ Wire Wire Line
 Wire Wire Line
 	6025 3125 6025 3050
 Connection ~ 6025 3050
+$Comp
+L D_Small D?
+U 1 1 56C9FB14
+P 6100 3400
+F 0 "D?" H 6050 3480 50  0000 L CNN
+F 1 "D_Small" H 5950 3320 50  0000 L CNN
+F 2 "" V 6100 3400 50  0000 C CNN
+F 3 "" V 6100 3400 50  0000 C CNN
+	1    6100 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3300 6100 3200
+Connection ~ 6100 3200
 $EndSCHEMATC
