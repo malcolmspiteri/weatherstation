@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP GRAYHILL_76SC04T
-D Double Single Pole Double Throw (SPDT) switch
+$CMP D_Small_ZLLS500
+D Diode
 $ENDCMP
 #
 #End Doc Library
